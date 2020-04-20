@@ -1,3 +1,5 @@
+import { Person, render } from "./personalProfile.js"
+
 let people = [
     new Person("Bob", "bob-ross.jpg"),
     new Person("Frida", "frida-kahlo.jpg"),
