@@ -1,0 +1,25 @@
+.profile {
+    display: inline-block;
+    background: #d8d8d8;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 100px;
+}
+
+.profile h2 {
+    text-align: center;
+}
+
+#list ul {
+    list-style: none;
+}
+
+#list li {
+    display: inline-block;
+}
