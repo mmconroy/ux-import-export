@@ -1,24 +1,24 @@
-import { Person, render } from "./personalProfile.js"
+import { Person, render } from "./js/personalProfile.js";
 
 let people = [
-    new Person("Bob", "bob-ross.jpg"),
-    new Person("Frida", "frida-kahlo.jpg"),
-    new Person("Dali", "dali.jpg")
+  new Person("Bob", "./imgs/bob-ross.jpg"),
+  new Person("Frida", "./imgs/frida-kahlo.jpg"),
+  new Person("Dali", "./imgs/dali.jpg"),
 ];
 
 window.onload = () => {
-    renderList(people);
+  renderList(people);
 };
 
 function renderList(people) {
-    let html = "";
-    html += `<ul>`;
-    for (let person of people) {
-        html += "<li>";
-        html += render(person);
-        html += "</li>";
-    }
-    html += "</ul>";
+  let html = "";
+  html += `<ul>`;
+  for (let person of people) {
+    html += "<li>";
+    html += render(person);
+    html += "</li>";
+  }
+  html += "</ul>";
 
-    document.getElementById("list").innerHTML = html;
+  document.getElementById("list").innerHTML = html;
 }
